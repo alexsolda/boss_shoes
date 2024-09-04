@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={`${inter.variable} text-white font-normal font-inter bg-primary`}>
+      <body className={`${inter.variable} h-full text-white font-normal font-inter bg-primary`}>
         <Header />
         {children}
         <Footer />

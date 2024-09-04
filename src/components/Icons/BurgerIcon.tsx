@@ -11,4 +11,4 @@ const BurgerIcon = ():ReactElement => {
     />    
 }
 
-export default BurgerIcon
+export default BurgerIcon;

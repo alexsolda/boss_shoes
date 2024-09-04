@@ -16,4 +16,4 @@ const Logo = ():ReactElement => {
     )
 }
 
-export default Logo
+export default Logo;

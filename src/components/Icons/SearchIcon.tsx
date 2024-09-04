@@ -11,4 +11,4 @@ const SearchIcon = ():ReactElement => {
     />    
 }
 
-export default SearchIcon
+export default SearchIcon;

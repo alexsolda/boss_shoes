@@ -11,4 +11,4 @@ const BagIcon = ():ReactElement => {
     />    
 }
 
-export default BagIcon
+export default BagIcon;

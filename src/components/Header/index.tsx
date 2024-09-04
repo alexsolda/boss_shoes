@@ -28,4 +28,4 @@ const Header = ():ReactElement => {
     )
 }
 
-export default Header
+export default Header;
