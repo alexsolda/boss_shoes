@@ -1,7 +1,9 @@
+import InfosTemplate from "@/templates/Home/InfosTemplate";
+
 export default function Home() {
   return (
     <main>
-      hello world
+      <InfosTemplate />
     </main>
   );
 }
