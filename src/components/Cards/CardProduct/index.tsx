@@ -1,10 +1,15 @@
+'use client'
 import Button from "@/components/Button";
 import BagIcon from "@/components/Icons/BagIcon";
+import { useProducts } from "@/stores/Products";
 import { IMockProducts } from "@/utils/mockProducts";
 import Image from "next/image";
 import { ReactElement } from "react";
 
 const CardProduct = ({id, name, description, image, price}: IMockProducts):ReactElement => {
+
+    const {addCart} = useProducts();
+
     return (
         <div className="group backdrop-blur-sm bg-white/10 rounded-3xl shadow-md xl:p-16 p-8">
            <div className="flex flex-col items-center">
@@ -25,7 +30,7 @@ const CardProduct = ({id, name, description, image, price}: IMockProducts):React
            </div>
             <div className="flex items-center justify-between mt-8">
                 <p className="text-2xl font-semibold">Rs. 3500,00</p>
-                <Button icon={<BagIcon />} />
+                <Button icon={<BagIcon />} onClick={() => addCart(id)} />
             </div>
         </div>
     )

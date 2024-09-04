@@ -2,8 +2,8 @@ import { ReactElement } from "react"
 import Logo from "../Logo"
 import Link from "next/link"
 import SearchIcon from "../Icons/SearchIcon"
-import BagIcon from "../Icons/BagIcon"
 import BurgerIcon from "../Icons/BurgerIcon"
+import Cart from "../Cart"
 
 const Header = ():ReactElement => {
     return (
@@ -20,7 +20,7 @@ const Header = ():ReactElement => {
                     <p>OUR PRODUCTS</p>
                     </div>
                     <SearchIcon />
-                    <BagIcon />
+                    <Cart />
                     <BurgerIcon />
                 </nav>
             </div>
