@@ -24,6 +24,12 @@ const config: Config = {
       width: {
         userView: '80rem'
       },
+      margin: {
+        userView: '3.625rem'
+      },
+      padding: {
+        userView: '3.625rem'
+      },
     },
   },
   plugins: [],
