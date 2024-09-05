@@ -17,7 +17,7 @@ const Button = ({
   return (
     <button
       {...props}
-      className={`${outlined ? 'bg-transparent' : 'bg-primary'} ${!onlyIcon ? 'border border-white rounded-xl p-2 hover:bg-primary hover:scale-105' : ''} active:scale-95 transition`}
+      className={`${outlined ? 'bg-transparent' : 'bg-primary'} ${!onlyIcon ? 'border border-white rounded-xl py-2 px-8 hover:bg-primary hover:scale-105' : ''} active:scale-95 transition`}
     >
       {title && <p className="text-white">{title}</p>}
       {icon && icon}
