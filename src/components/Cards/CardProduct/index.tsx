@@ -11,7 +11,7 @@ const CardProduct = ({id, name, description, image, price}: IMockProducts):React
     const {addCart} = useProducts();
 
     return (
-        <div className="group bg-gradient-to-t from-white/10 to-transparent shadow-lg rounded-3xl shadow-md xl:p-16 p-8">
+        <div className="relative z-50 group backdrop-blur-sm bg-gradient-to-t from-white/10 to-transparent shadow-lg rounded-3xl shadow-md xl:p-16 p-8">
            <div className="flex flex-col items-center">
            <div className="relative xl:w-[461px] xl:h-[461px] w-[300px] h-[300px]">
                 <Image
