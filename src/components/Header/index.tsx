@@ -20,7 +20,9 @@ const Header = ():ReactElement => {
                     </Link>
                     <Dropdown title="OUR PRODUCTS" menus={['Menu 1', 'Menu 2', 'Menu 3']} />
                     </div>
-                    <SearchIcon />
+                    <div className="xl:block hidden">
+                        <SearchIcon />
+                    </div>
                     <Cart />
                     <BurgerIcon />
                 </nav>
