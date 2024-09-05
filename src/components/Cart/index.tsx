@@ -33,7 +33,7 @@ const Cart = ():ReactElement => {
             <Button icon={<BagIcon />} onlyIcon onClick={() => setIsCartModalOpen(true)} />
           </div>
           <ModalContainer title="Cart" isOpen={isCartModalOpen} onClose={() => setIsCartModalOpen(false)}>
-            <div className="relative">
+            <div className="relative z-50">
               {cart.length === 0 ? (
                 <p className="text-black-900 text-center">Empty cart</p>
               ) : (

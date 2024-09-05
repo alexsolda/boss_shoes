@@ -30,7 +30,7 @@ const CardCartProduct = ({id, name, description, image, price, quantity}: ICardC
     return (
        <div className="max-h-[100px] overflow-scroll">
          <div className="flex items-center gap-3 border-b border-gray-200 py-1">
-             <div className="relative xl:w-[60px] xl:h-[60px] w-[300px] h-[300px]">
+             <div className="relative w-[60px] h-[60px]">
                 <Image
                     src={image}
                     sizes="50vw"
