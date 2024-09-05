@@ -25,7 +25,6 @@ export default function RootLayout({
       <body className={`${inter.variable} relative z-50 h-full text-white font-normal font-inter bg-primary`}>
         <div className="absolute z-0 h-[200vh] w-[200vh] border-[150px] border-white/10 rounded-full top-[-10%] right-[60%]" />
         <div className="absolute z-0 h-[200vh] w-[200vh] border-[150px] border-white/10 rounded-full top-[90vh] left-[40%]" />
-        <Header />
         <div>
           {children}
         </div>

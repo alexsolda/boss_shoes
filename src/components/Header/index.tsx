@@ -1,13 +1,13 @@
-import { ReactElement } from "react"
-import Logo from "../Logo"
-import Link from "next/link"
-import SearchIcon from "../Icons/SearchIcon"
-import BurgerIcon from "../Icons/BurgerIcon"
-import Cart from "../Cart"
+import { ReactElement } from "react";
+import Logo from "../Logo";
+import Link from "next/link";
+import SearchIcon from "../Icons/SearchIcon";
+import BurgerIcon from "../Icons/BurgerIcon";
+import Cart from "../Cart";
 
 const Header = ():ReactElement => {
     return (
-        <header className="flex items-center justify-between mt-[43px]">
+        <header className="flex items-center justify-between absolute right-0 left-0 mt-[43px] z-50">
             <div className="xl:ml-userView ml-3">
                 <Logo />
             </div>
@@ -26,6 +26,6 @@ const Header = ():ReactElement => {
             </div>
         </header>
     )
-}
+};
 
 export default Header;
