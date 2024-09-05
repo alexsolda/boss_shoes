@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import Logo from "../Logo";
 import Link from "next/link";
+import Dropdown from "../Dropdown";
 
 const Footer = ():ReactElement => {
     return (
@@ -21,7 +22,9 @@ const Footer = ():ReactElement => {
                 </Link>
             </nav>
             <nav className="w-full grid xl:grid-cols-3 grid-cols-1 xl:gap-0 gap-6">
-                <p className="xl:text-left text-center">English</p>
+                <div className="xl:text-left text-center">
+                    <Dropdown title="English" menus={['Portuguese', 'Spanish', 'English']} />
+                </div>
                 <div className="flex flex-1 items-center justify-center gap-8 font-bold">
                     <a href="#" target="_blank">FB</a>
                     <a href="#" target="_blank">TW</a>

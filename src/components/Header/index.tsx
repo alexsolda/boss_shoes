@@ -4,6 +4,7 @@ import Link from "next/link";
 import SearchIcon from "../Icons/SearchIcon";
 import BurgerIcon from "../Icons/BurgerIcon";
 import Cart from "../Cart";
+import Dropdown from "../Dropdown";
 
 const Header = ():ReactElement => {
     return (
@@ -17,7 +18,7 @@ const Header = ():ReactElement => {
                     <Link passHref href="#">
                         <p>HOME</p>
                     </Link>
-                    <p>OUR PRODUCTS</p>
+                    <Dropdown title="OUR PRODUCTS" menus={['Menu 1', 'Menu 2', 'Menu 3']} />
                     </div>
                     <SearchIcon />
                     <Cart />
