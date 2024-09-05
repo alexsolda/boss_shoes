@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = ():ReactElement => {
     return (
-        <footer className="xl:mt-32 mt-16 bg-black-900 p-userView flex flex-col items-center gap-16">
+        <footer className="relative z-50 xl:mt-32 mt-16 bg-black-900 p-userView flex flex-col items-center gap-16">
             <Logo />
             <nav className="w-full flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-3">
                 <Link passHref href="#">
