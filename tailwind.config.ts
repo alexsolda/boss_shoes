@@ -14,7 +14,10 @@ const config: Config = {
           900: "#000000"
         },
         white: "#ffffff",
-        primary: "#77C0E9"
+        primary: "#7CC1EA",
+        blue: {
+          300: "#77C0E9"
+        }
       },
       fontFamily: {
         inter: ['var(--font-inter)'],
