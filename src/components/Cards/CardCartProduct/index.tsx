@@ -1,10 +1,12 @@
 'use client'
+import { useProducts } from "@/stores/Products";
 import { formatPrice } from "@/utils/formatters";
 import Image from "next/image";
 import { ReactElement, useEffect, useState } from "react";
 import { IoCloseOutline } from 'react-icons/io5'
 
 type ICardCartProductProps = {
+    id: number;
     name: string;
     description: string;
     image: string;
@@ -12,7 +14,9 @@ type ICardCartProductProps = {
     quantity: number;
 }
 
-const CardCartProduct = ({name, description, image, price, quantity}: ICardCartProductProps):ReactElement => {
+const CardCartProduct = ({id, name, description, image, price, quantity}: ICardCartProductProps):ReactElement => {
+
+    const {removeTotalQuantity, updateQuantity} = useProducts();
 
     const [totalPrice, setTotalPrice] = useState(0);
 
@@ -40,13 +44,13 @@ const CardCartProduct = ({name, description, image, price, quantity}: ICardCartP
                     <p>{name}</p>
                 </div>
                 <div className="flex items-center gap-3">
-                    <div className="cursor-pointer p-1 shadow-lg">-</div>
+                    <div className="cursor-pointer p-1 shadow-lg" onClick={() => updateQuantity(id, 'minus')}>-</div>
                     <p className="font-sm">{String(quantity)}</p>
-                    <div className="cursor-pointer p-1 shadow-lg">+</div>
+                    <div className="cursor-pointer p-1 shadow-lg" onClick={() => updateQuantity(id, 'plus')}>+</div>
                 </div>
             </div>
             <p className="font-bold text-primary text-sm">{formatPrice(totalPrice)}</p>
-            <div className="text-red-600 cursor-pointer">
+            <div className="text-red-600 cursor-pointer" onClick={() => removeTotalQuantity(id)}>
                 <IoCloseOutline size={15} />
             </div>
         </div>

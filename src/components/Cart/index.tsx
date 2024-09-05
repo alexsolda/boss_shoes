@@ -39,7 +39,14 @@ const Cart = ():ReactElement => {
               ) : (
                 <div className="flex flex-col">
                   {cart.map((prod) => (
-                    <CardCartProduct name={prod.name} description={prod.description} image={prod.image} price={prod.price} quantity={prod.quantity} />
+                    <CardCartProduct 
+                      id={prod.id} 
+                      name={prod.name} 
+                      description={prod.description} 
+                      image={prod.image} 
+                      price={prod.price} 
+                      quantity={prod.quantity} 
+                    />
                   ))}
                   <div className="w-full mt-6 flex items-center justify-between">
                     <div className="flex items-center gap-3 text-black-900 fotn-sm">
