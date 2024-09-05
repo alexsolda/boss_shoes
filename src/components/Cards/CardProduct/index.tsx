@@ -2,6 +2,7 @@
 import Button from "@/components/Button";
 import BagIcon from "@/components/Icons/BagIcon";
 import { useProducts } from "@/stores/Products";
+import { formatPrice } from "@/utils/formatters";
 import { IMockProducts } from "@/utils/mockProducts";
 import Image from "next/image";
 import { ReactElement } from "react";
@@ -29,7 +30,7 @@ const CardProduct = ({id, name, description, image, price}: IMockProducts):React
             </div>
            </div>
             <div className="flex items-center justify-between mt-8">
-                <p className="text-2xl font-semibold">Rs. 3500,00</p>
+                <p className="text-2xl font-semibold">{formatPrice(price)}</p>
                 <Button icon={<BagIcon />} onClick={() => addCart(id)} />
             </div>
         </div>

@@ -40,6 +40,7 @@ const Cart = ():ReactElement => {
                 <div className="flex flex-col">
                   {cart.map((prod) => (
                     <CardCartProduct 
+                      key={prod.id}
                       id={prod.id} 
                       name={prod.name} 
                       description={prod.description} 
