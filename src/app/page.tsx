@@ -1,6 +1,7 @@
 import InfosTemplate from "@/templates/InfosTemplate";
 import ProductQualityTemplate from "@/templates/ProductQualityTemplate";
 import ProductsTemplate from "@/templates/ProductsTemplate";
+import TestimonialsTemplate from "@/templates/TestimonialsTemplate";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <InfosTemplate />
       <ProductsTemplate />
       <ProductQualityTemplate />
+      <TestimonialsTemplate />
     </main>
   );
 }
