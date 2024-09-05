@@ -1,6 +1,6 @@
 
 # Boss Shoes
-[Acesso](https://master.d3t88rygwuzh8x.amplifyapp.com)
+[Acesso](https://main.d2s9tggmjk9cgz.amplifyapp.com/)
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alexsolda/boss_shoes?color=%2304D361">
