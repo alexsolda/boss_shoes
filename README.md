@@ -16,10 +16,11 @@
    <a href="https://dev-alexsolda.vercel.app/">
     <img alt="Feito por Alex Solda" src="https://img.shields.io/badge/feito-por%20Alex%20Solda-D818A5">
    </a>
+ 
 
 </p>
 <h1 align="center">
-    <img width="1680" alt="Tela inicial do site boss shoes" src="https://github.com/user-attachments/assets/e495f72b-9758-4016-87cc-bf82d89f7873">
+    <img width="1680" alt="Tela inicial do site boss shoes" src="https://github.com/user-attachments/assets/48813668-c37c-4d6b-951a-4a2c39aeff55">
 </h1>
 
 <h4 align="center"> 
